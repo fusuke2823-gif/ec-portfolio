@@ -4,20 +4,28 @@ import StockLabel from '../common/StockLabel'
 import StarRating from '../common/StarRating'
 import { useCart } from '../../context/CartContext'
 import { useFavorite } from '../../context/FavoriteContext'
+import { useInView } from '../../hooks/useInView'
 
 function avgRating(reviews) {
   if (!reviews.length) return 0
   return Math.round(reviews.reduce((s, r) => s + r.rating, 0) / reviews.length)
 }
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, delay = 0 }) {
   const { addItem, cart } = useCart()
   const { isFavorite, toggleFavorite } = useFavorite()
   const inCart = cart.some((item) => item.productId === product.id)
   const fav = isFavorite(product.id)
+  const [ref, isVisible] = useInView()
 
   return (
-    <div className="group bg-surface border border-border rounded-xl overflow-hidden flex flex-col hover:shadow-md transition-shadow h-full">
+    <div
+      ref={ref}
+      style={{ transitionDelay: `${delay}ms` }}
+      className={`group bg-surface border border-border rounded-xl overflow-hidden flex flex-col hover:shadow-md transition-all duration-500 h-full ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+      }`}
+    >
       <Link to={`/product/${product.id}`} className="relative block overflow-hidden aspect-square">
         <img
           src={product.images[0]}
