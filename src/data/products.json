@@ -1,0 +1,460 @@
+[
+  {
+    "id": "001",
+    "name": "オーバーサイズコットンTシャツ",
+    "description": "上質なコットン100%素材を使用したオーバーサイズシルエットのTシャツ。シンプルなデザインで着回し力抜群。洗濯機で洗えるイージーケア仕様。",
+    "price": 2980,
+    "category": "トップス",
+    "images": [
+      "https://picsum.photos/seed/top001a/600/600",
+      "https://picsum.photos/seed/top001b/600/600",
+      "https://picsum.photos/seed/top001c/600/600"
+    ],
+    "stock": 24,
+    "badge": "NEW",
+    "rankScore": 92,
+    "isNew": true,
+    "reviews": [
+      { "user": "tanaka_k", "rating": 5, "comment": "着心地が良くて気に入っています。サイズ感もちょうどよかった。", "hasPhoto": true, "date": "2026-04-15" },
+      { "user": "sato_m", "rating": 4, "comment": "素材が良くて洗濯しても型崩れしません。色も豊富でまた買いたい。", "hasPhoto": false, "date": "2026-04-02" }
+    ]
+  },
+  {
+    "id": "002",
+    "name": "リネン長袖シャツ",
+    "description": "天然リネン100%で仕立てた長袖シャツ。通気性が高く夏でも快適に着用できます。程よいボックスシルエットで、インナーとしても羽織りとしても活躍。",
+    "price": 5980,
+    "category": "トップス",
+    "images": [
+      "https://picsum.photos/seed/top002a/600/600",
+      "https://picsum.photos/seed/top002b/600/600"
+    ],
+    "stock": 8,
+    "badge": null,
+    "rankScore": 74,
+    "isNew": false,
+    "reviews": [
+      { "user": "ito_r", "rating": 5, "comment": "リネンの質感が最高です。夏のコーデに欠かせない一枚になりました。", "hasPhoto": true, "date": "2026-05-01" },
+      { "user": "yamada_t", "rating": 4, "comment": "少しシワになりやすいですが、それもリネンの味ですね。", "hasPhoto": false, "date": "2026-04-22" },
+      { "user": "kato_a", "rating": 5, "comment": "サラッとした着心地で暑い日も快適でした。", "hasPhoto": false, "date": "2026-04-10" }
+    ]
+  },
+  {
+    "id": "003",
+    "name": "ボーダーカットソー",
+    "description": "フランス海軍にインスパイアされたボーダー柄カットソー。コットン天竺素材で一年を通して活躍。スリムなシルエットでパンツにもスカートにも合わせやすい。",
+    "price": 3480,
+    "category": "トップス",
+    "images": [
+      "https://picsum.photos/seed/top003a/600/600",
+      "https://picsum.photos/seed/top003b/600/600"
+    ],
+    "stock": 3,
+    "badge": "SALE",
+    "rankScore": 68,
+    "isNew": false,
+    "reviews": [
+      { "user": "nakamura_y", "rating": 4, "comment": "薄手で重ね着にぴったり。色も可愛いです。", "hasPhoto": false, "date": "2026-03-18" }
+    ]
+  },
+  {
+    "id": "004",
+    "name": "タートルネックニット",
+    "description": "ウール混のタートルネックニット。首元をしっかり保温しつつ、すっきりとしたシルエットをキープ。秋冬の定番アイテム。マシンウォッシャブル対応。",
+    "price": 6980,
+    "category": "トップス",
+    "images": [
+      "https://picsum.photos/seed/top004a/600/600",
+      "https://picsum.photos/seed/top004b/600/600",
+      "https://picsum.photos/seed/top004c/600/600"
+    ],
+    "stock": 15,
+    "badge": null,
+    "rankScore": 81,
+    "isNew": false,
+    "reviews": [
+      { "user": "suzuki_h", "rating": 5, "comment": "肌触りが良くてチクチクしません。暖かくてお気に入りです。", "hasPhoto": true, "date": "2026-01-10" },
+      { "user": "watanabe_j", "rating": 5, "comment": "シルエットが綺麗でコーデが締まります。色違いも欲しいです。", "hasPhoto": false, "date": "2025-12-20" }
+    ]
+  },
+  {
+    "id": "005",
+    "name": "リブニットカーディガン",
+    "description": "縦リブ編みが美しいコットンカーディガン。前開きで体温調整がしやすく、インナーとしても羽織りとしても使える万能アイテム。ゆったりとしたシルエットが今どき。",
+    "price": 7480,
+    "category": "トップス",
+    "images": [
+      "https://picsum.photos/seed/top005a/600/600",
+      "https://picsum.photos/seed/top005b/600/600"
+    ],
+    "stock": 11,
+    "badge": "NEW",
+    "rankScore": 88,
+    "isNew": true,
+    "reviews": [
+      { "user": "kobayashi_m", "rating": 5, "comment": "ゆったりしていて体型カバーにもなります。色がきれいで気に入っています。", "hasPhoto": true, "date": "2026-05-05" },
+      { "user": "abe_k", "rating": 4, "comment": "素材感が良く、春先に大活躍しています。", "hasPhoto": false, "date": "2026-04-28" }
+    ]
+  },
+  {
+    "id": "006",
+    "name": "オープンカラーシャツ",
+    "description": "開襟カラーがリゾートムードを演出するシャツ。さらりとしたポリエステル素材でシワになりにくく、旅行にも最適。プリント柄でコーデのポイントに。",
+    "price": 4980,
+    "category": "トップス",
+    "images": [
+      "https://picsum.photos/seed/top006a/600/600",
+      "https://picsum.photos/seed/top006b/600/600"
+    ],
+    "stock": 0,
+    "badge": "期間限定",
+    "rankScore": 63,
+    "isNew": false,
+    "reviews": [
+      { "user": "ito_s", "rating": 4, "comment": "デザインが個性的でお気に入りです。サイズ感は少し大きめでした。", "hasPhoto": true, "date": "2026-03-05" }
+    ]
+  },
+  {
+    "id": "007",
+    "name": "スウェットフーディ",
+    "description": "裏起毛コットンスウェットのプルオーバーパーカー。ゆったりとしたドロップショルダーシルエット。カンガルーポケット付きで実用的。ヴィンテージウォッシュ加工済み。",
+    "price": 6480,
+    "category": "トップス",
+    "images": [
+      "https://picsum.photos/seed/top007a/600/600",
+      "https://picsum.photos/seed/top007b/600/600",
+      "https://picsum.photos/seed/top007c/600/600"
+    ],
+    "stock": 7,
+    "badge": null,
+    "rankScore": 85,
+    "isNew": false,
+    "reviews": [
+      { "user": "matsumoto_r", "rating": 5, "comment": "着心地が最高。部屋着にも外出着にもなって便利です。", "hasPhoto": false, "date": "2026-02-14" },
+      { "user": "inoue_t", "rating": 5, "comment": "ウォッシュ加工の風合いがおしゃれです。", "hasPhoto": true, "date": "2026-01-30" }
+    ]
+  },
+  {
+    "id": "008",
+    "name": "テーパードスラックス",
+    "description": "上品なテーパードシルエットのスラックス。ウール混素材でドレープが美しく、オフィスカジュアルからデートまで幅広く活躍。センタープレス入りで脚長効果も。",
+    "price": 7980,
+    "category": "パンツ",
+    "images": [
+      "https://picsum.photos/seed/pnt008a/600/600",
+      "https://picsum.photos/seed/pnt008b/600/600"
+    ],
+    "stock": 6,
+    "badge": null,
+    "rankScore": 76,
+    "isNew": false,
+    "reviews": [
+      { "user": "fujita_k", "rating": 5, "comment": "シルエットが綺麗でお気に入りです。ウエストがゴム仕様なので楽に履けます。", "hasPhoto": false, "date": "2026-04-20" },
+      { "user": "ogawa_n", "rating": 4, "comment": "素材感が良く、しわになりにくいのが助かります。", "hasPhoto": true, "date": "2026-03-30" }
+    ]
+  },
+  {
+    "id": "009",
+    "name": "ストレートデニムパンツ",
+    "description": "定番のストレートシルエットデニムパンツ。12オンスのセルビッジデニムを使用。履くほどに体になじみ、自分だけの色落ちが楽しめる。ウォッシュド加工済みで購入後からすぐに履ける。",
+    "price": 8980,
+    "category": "パンツ",
+    "images": [
+      "https://picsum.photos/seed/pnt009a/600/600",
+      "https://picsum.photos/seed/pnt009b/600/600",
+      "https://picsum.photos/seed/pnt009c/600/600"
+    ],
+    "stock": 18,
+    "badge": "NEW",
+    "rankScore": 95,
+    "isNew": true,
+    "reviews": [
+      { "user": "yamamoto_s", "rating": 5, "comment": "デニムの質がとても良いです。ストレートシルエットが今っぽくておしゃれ。", "hasPhoto": true, "date": "2026-05-10" },
+      { "user": "hayashi_r", "rating": 5, "comment": "フィット感が絶妙です。デニムはここのが一番好きです。", "hasPhoto": true, "date": "2026-05-02" },
+      { "user": "sasaki_m", "rating": 4, "comment": "少し硬いですが、育てていく楽しみがあります。", "hasPhoto": false, "date": "2026-04-25" }
+    ]
+  },
+  {
+    "id": "010",
+    "name": "ワイドチノパンツ",
+    "description": "ゆとりのあるワイドシルエットのチノパンツ。ウエストはゴム仕様でストレスフリー。さらりとした綿ポリ混素材でシワになりにくく、オールシーズン活躍。",
+    "price": 5980,
+    "category": "パンツ",
+    "images": [
+      "https://picsum.photos/seed/pnt010a/600/600",
+      "https://picsum.photos/seed/pnt010b/600/600"
+    ],
+    "stock": 2,
+    "badge": "SALE",
+    "rankScore": 60,
+    "isNew": false,
+    "reviews": [
+      { "user": "kimura_a", "rating": 4, "comment": "楽なのにおしゃれに見えるのが気に入っています。", "hasPhoto": false, "date": "2026-03-22" }
+    ]
+  },
+  {
+    "id": "011",
+    "name": "ジョガーパンツ",
+    "description": "スポーティなジョガーパンツ。ストレッチ素材で動きやすく、裾のリブが足首をスマートにまとめます。ウエストはドローコード仕様で調整可能。外出着にも対応するきれいめデザイン。",
+    "price": 4480,
+    "category": "パンツ",
+    "images": [
+      "https://picsum.photos/seed/pnt011a/600/600",
+      "https://picsum.photos/seed/pnt011b/600/600"
+    ],
+    "stock": 9,
+    "badge": null,
+    "rankScore": 71,
+    "isNew": false,
+    "reviews": [
+      { "user": "nakagawa_t", "rating": 5, "comment": "着心地が良すぎて毎日履いています。洗濯しても型崩れしません。", "hasPhoto": false, "date": "2026-02-28" },
+      { "user": "shirai_k", "rating": 4, "comment": "ストレッチが効いて動きやすいです。スポーティすぎず普段使いできます。", "hasPhoto": false, "date": "2026-02-10" }
+    ]
+  },
+  {
+    "id": "012",
+    "name": "レザーベルト付きスラックス",
+    "description": "付属のレザーベルトが高級感を演出するドレッシーなスラックス。ウールポリ混素材でハリ感があり、きちんとした印象を与えます。フォーマルシーンにも対応。",
+    "price": 9800,
+    "category": "パンツ",
+    "images": [
+      "https://picsum.photos/seed/pnt012a/600/600",
+      "https://picsum.photos/seed/pnt012b/600/600"
+    ],
+    "stock": 4,
+    "badge": null,
+    "rankScore": 57,
+    "isNew": false,
+    "reviews": [
+      { "user": "adachi_r", "rating": 5, "comment": "仕事着に購入しました。クオリティが高くて満足です。", "hasPhoto": true, "date": "2026-04-05" }
+    ]
+  },
+  {
+    "id": "013",
+    "name": "ウールブレンドコート",
+    "description": "上質なウール60%混素材を使用したロング丈コート。クラシックなチェスターコートスタイルで大人の余裕を演出。裏地付きで保温性も高く、インナーをすっきりとまとめられます。",
+    "price": 24800,
+    "category": "アウター",
+    "images": [
+      "https://picsum.photos/seed/out013a/600/600",
+      "https://picsum.photos/seed/out013b/600/600",
+      "https://picsum.photos/seed/out013c/600/600"
+    ],
+    "stock": 5,
+    "badge": null,
+    "rankScore": 89,
+    "isNew": false,
+    "reviews": [
+      { "user": "ueda_m", "rating": 5, "comment": "この価格でこの品質は素晴らしいです。毎年着られる定番コートになりました。", "hasPhoto": true, "date": "2025-12-15" },
+      { "user": "endo_k", "rating": 5, "comment": "シルエットが美しくてコーデがグッと上がります。", "hasPhoto": true, "date": "2025-11-30" }
+    ]
+  },
+  {
+    "id": "014",
+    "name": "レザーライダースジャケット",
+    "description": "本革を使用した本格的なライダースジャケット。着込むほどに革が馴染み、自分だけのエイジングが楽しめます。YKKジッパー使用で耐久性も抜群。バイカースタイルはもちろん、カジュアルコーデにも。",
+    "price": 39800,
+    "category": "アウター",
+    "images": [
+      "https://picsum.photos/seed/out014a/600/600",
+      "https://picsum.photos/seed/out014b/600/600"
+    ],
+    "stock": 3,
+    "badge": "期間限定",
+    "rankScore": 83,
+    "isNew": false,
+    "reviews": [
+      { "user": "tanaka_h", "rating": 5, "comment": "革の質が良く、着ているだけでテンションが上がります。長く使えそうです。", "hasPhoto": true, "date": "2026-03-01" }
+    ]
+  },
+  {
+    "id": "015",
+    "name": "キルティングベスト",
+    "description": "軽量ダウン入りのキルティングベスト。コンパクトに折りたたんで持ち運べる優れもの。インナーとして使ってもアウターとしても活躍。アウトドアシーンにも対応。",
+    "price": 8980,
+    "category": "アウター",
+    "images": [
+      "https://picsum.photos/seed/out015a/600/600",
+      "https://picsum.photos/seed/out015b/600/600"
+    ],
+    "stock": 12,
+    "badge": "NEW",
+    "rankScore": 78,
+    "isNew": true,
+    "reviews": [
+      { "user": "nishimura_y", "rating": 4, "comment": "軽くて暖かいです。着ぶくれしないのが良いです。", "hasPhoto": false, "date": "2026-04-30" },
+      { "user": "shimizu_a", "rating": 5, "comment": "コンパクトにたためるので旅行にも持っていきました。重宝しています。", "hasPhoto": false, "date": "2026-04-18" }
+    ]
+  },
+  {
+    "id": "016",
+    "name": "マウンテンパーカー",
+    "description": "防水透湿素材を採用したマウンテンパーカー。突然の雨でも安心。通気性も高く蒸れにくい設計。ハイキングから街履きまで対応するユーティリティデザイン。",
+    "price": 12800,
+    "category": "アウター",
+    "images": [
+      "https://picsum.photos/seed/out016a/600/600",
+      "https://picsum.photos/seed/out016b/600/600",
+      "https://picsum.photos/seed/out016c/600/600"
+    ],
+    "stock": 0,
+    "badge": null,
+    "rankScore": 66,
+    "isNew": false,
+    "reviews": [
+      { "user": "ota_s", "rating": 4, "comment": "防水性能が高く、大雨でも浸みてきませんでした。", "hasPhoto": false, "date": "2026-02-05" }
+    ]
+  },
+  {
+    "id": "017",
+    "name": "本革二つ折りウォレット",
+    "description": "イタリアンレザーを使用した本革二つ折り財布。コンパクトながらカード収納も充実。使い込むほどに色艶が増し、経年変化を楽しめます。ギフトにも最適。",
+    "price": 9800,
+    "category": "アクセサリー",
+    "images": [
+      "https://picsum.photos/seed/acc017a/600/600",
+      "https://picsum.photos/seed/acc017b/600/600"
+    ],
+    "stock": 16,
+    "badge": null,
+    "rankScore": 82,
+    "isNew": false,
+    "reviews": [
+      { "user": "goto_k", "rating": 5, "comment": "革の質感が素晴らしい。ギフトで購入しましたが喜ばれました。", "hasPhoto": true, "date": "2026-04-12" },
+      { "user": "ikeda_r", "rating": 5, "comment": "コンパクトで使いやすいです。カードがたくさん入ります。", "hasPhoto": false, "date": "2026-03-28" }
+    ]
+  },
+  {
+    "id": "018",
+    "name": "キャンバストートバッグ",
+    "description": "厚手キャンバス素材のシンプルトートバッグ。A4書類がすっぽり入る大容量。内ポケット付きで小物の整理も簡単。ミニマルなデザインでどんなコーデにも馴染む。",
+    "price": 4980,
+    "category": "アクセサリー",
+    "images": [
+      "https://picsum.photos/seed/acc018a/600/600",
+      "https://picsum.photos/seed/acc018b/600/600"
+    ],
+    "stock": 20,
+    "badge": "SALE",
+    "rankScore": 73,
+    "isNew": false,
+    "reviews": [
+      { "user": "yoshida_m", "rating": 4, "comment": "丈夫で容量も大きくて使い勝手が良いです。洗えるのも便利。", "hasPhoto": false, "date": "2026-04-08" },
+      { "user": "mori_a", "rating": 5, "comment": "シンプルで飽きのこないデザインが気に入っています。", "hasPhoto": true, "date": "2026-03-25" }
+    ]
+  },
+  {
+    "id": "019",
+    "name": "ウールニットキャップ",
+    "description": "ウール100%のリブ編みニットキャップ。頭にフィットする絶妙なゆとりで、どんな頭のサイズにも対応。防寒性が高く、シンプルなデザインでコーデを選ばない。",
+    "price": 2480,
+    "category": "アクセサリー",
+    "images": [
+      "https://picsum.photos/seed/acc019a/600/600",
+      "https://picsum.photos/seed/acc019b/600/600"
+    ],
+    "stock": 1,
+    "badge": null,
+    "rankScore": 59,
+    "isNew": false,
+    "reviews": [
+      { "user": "hashimoto_y", "rating": 5, "comment": "ウールで暖かく、チクチクしないのが良いです。コスパも最高。", "hasPhoto": false, "date": "2026-01-20" }
+    ]
+  },
+  {
+    "id": "020",
+    "name": "本革ピンバックルベルト",
+    "description": "イタリアンレザーを使用したシンプルなピンバックルベルト。幅35mmで多くのパンツに対応。経年変化が楽しめる植物タンニンなめし革を使用。穴は5つ設けており、幅広いウエストサイズに対応。",
+    "price": 4480,
+    "category": "アクセサリー",
+    "images": [
+      "https://picsum.photos/seed/acc020a/600/600",
+      "https://picsum.photos/seed/acc020b/600/600"
+    ],
+    "stock": 10,
+    "badge": null,
+    "rankScore": 65,
+    "isNew": false,
+    "reviews": [
+      { "user": "kondo_s", "rating": 4, "comment": "シンプルで使いやすいです。革の質感も良好です。", "hasPhoto": false, "date": "2026-03-10" }
+    ]
+  },
+  {
+    "id": "021",
+    "name": "ローカットスニーカー",
+    "description": "アーバンアスレティックスタイルのローカットスニーカー。クッション性の高いソールで一日中歩き回っても疲れにくい設計。シンプルなホワイトベースでどんなコーデにも合わせやすい。",
+    "price": 12800,
+    "category": "シューズ",
+    "images": [
+      "https://picsum.photos/seed/sho021a/600/600",
+      "https://picsum.photos/seed/sho021b/600/600",
+      "https://picsum.photos/seed/sho021c/600/600"
+    ],
+    "stock": 8,
+    "badge": "NEW",
+    "rankScore": 97,
+    "isNew": true,
+    "reviews": [
+      { "user": "furukawa_t", "rating": 5, "comment": "軽くて履き心地抜群です。毎日履いています。", "hasPhoto": true, "date": "2026-05-12" },
+      { "user": "aoyama_k", "rating": 5, "comment": "デザインもおしゃれでどんなコーデにも合います。", "hasPhoto": true, "date": "2026-05-08" },
+      { "user": "sugiyama_m", "rating": 4, "comment": "少しサイズが大きめなので、ハーフサイズ下げて正解でした。", "hasPhoto": false, "date": "2026-04-30" }
+    ]
+  },
+  {
+    "id": "022",
+    "name": "レザーローファー",
+    "description": "本革アッパーのクラシックなペニーローファー。グッドイヤーウェルト製法で修理もしながら長く使えます。ビジネスカジュアルからスマートカジュアルまで対応する万能シューズ。",
+    "price": 16800,
+    "category": "シューズ",
+    "images": [
+      "https://picsum.photos/seed/sho022a/600/600",
+      "https://picsum.photos/seed/sho022b/600/600"
+    ],
+    "stock": 4,
+    "badge": null,
+    "rankScore": 77,
+    "isNew": false,
+    "reviews": [
+      { "user": "imai_h", "rating": 5, "comment": "革の質が良く、履き込むほど足に馴染んできました。一生もの。", "hasPhoto": true, "date": "2026-03-15" },
+      { "user": "saito_t", "rating": 4, "comment": "最初は少し硬いですが、慣れると最高に快適です。", "hasPhoto": false, "date": "2026-02-25" }
+    ]
+  },
+  {
+    "id": "023",
+    "name": "チェルシーブーツ",
+    "description": "サイドゴアを採用したクラシックなチェルシーブーツ。本革アッパーと合成ゴムソールの組み合わせで耐久性と快適性を両立。スキニーパンツやスラックスに合わせてシャープな印象を。",
+    "price": 18800,
+    "category": "シューズ",
+    "images": [
+      "https://picsum.photos/seed/sho023a/600/600",
+      "https://picsum.photos/seed/sho023b/600/600",
+      "https://picsum.photos/seed/sho023c/600/600"
+    ],
+    "stock": 2,
+    "badge": null,
+    "rankScore": 80,
+    "isNew": false,
+    "reviews": [
+      { "user": "kubo_a", "rating": 5, "comment": "シルエットが綺麗でコーデがまとまります。雨にも強くて重宝しています。", "hasPhoto": true, "date": "2026-04-01" }
+    ]
+  },
+  {
+    "id": "024",
+    "name": "スポーツサンダル",
+    "description": "アウトドア対応のスポーツサンダル。アジャスタブルストラップで自分の足にフィットさせられます。防水仕様でビーチや川辺でも活躍。厚底ソールでクッション性も高い。",
+    "price": 4980,
+    "category": "シューズ",
+    "images": [
+      "https://picsum.photos/seed/sho024a/600/600",
+      "https://picsum.photos/seed/sho024b/600/600"
+    ],
+    "stock": 14,
+    "badge": "期間限定",
+    "rankScore": 55,
+    "isNew": false,
+    "reviews": [
+      { "user": "nakano_r", "rating": 4, "comment": "防水性が高くキャンプで大活躍しました。デザインもおしゃれです。", "hasPhoto": false, "date": "2026-05-20" },
+      { "user": "fujiwara_s", "rating": 4, "comment": "ストラップの調整が細かくできてフィット感が良い。", "hasPhoto": false, "date": "2026-05-15" }
+    ]
+  }
+]
