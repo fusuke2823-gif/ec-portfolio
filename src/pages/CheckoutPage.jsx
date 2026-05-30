@@ -6,6 +6,29 @@ import products from '../data/products.json'
 const SHIPPING_THRESHOLD = 3000
 const SHIPPING_FEE = 500
 
+function Field({ label, name, type = 'text', placeholder, value, onChange, error }) {
+  return (
+    <div>
+      <label className="block text-sm font-medium text-primary mb-1">
+        {label} <span className="text-red-500">*</span>
+      </label>
+      <input
+        type={type}
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        className={`w-full px-3 py-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 transition ${
+          error
+            ? 'border-red-400 focus:ring-red-200'
+            : 'border-border focus:ring-accent/30 focus:border-accent'
+        }`}
+      />
+      {error && <p className="mt-1 text-xs text-red-500">{error}</p>}
+    </div>
+  )
+}
+
 function validate(form) {
   const errors = {}
   if (!form.name.trim()) errors.name = 'お名前を入力してください'
@@ -59,27 +82,6 @@ export default function CheckoutPage() {
     )
   }
 
-  const Field = ({ label, name, type = 'text', placeholder }) => (
-    <div>
-      <label className="block text-sm font-medium text-primary mb-1">
-        {label} <span className="text-red-500">*</span>
-      </label>
-      <input
-        type={type}
-        name={name}
-        value={form[name]}
-        onChange={handleChange}
-        placeholder={placeholder}
-        className={`w-full px-3 py-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 transition ${
-          errors[name]
-            ? 'border-red-400 focus:ring-red-200'
-            : 'border-border focus:ring-accent/30 focus:border-accent'
-        }`}
-      />
-      {errors[name] && <p className="mt-1 text-xs text-red-500">{errors[name]}</p>}
-    </div>
-  )
-
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold text-primary mb-8">ご注文内容の確認</h1>
@@ -90,10 +92,10 @@ export default function CheckoutPage() {
             <div className="bg-surface border border-border rounded-xl p-6">
               <h2 className="text-base font-bold text-primary mb-4">お届け先情報</h2>
               <div className="space-y-4">
-                <Field label="お名前" name="name" placeholder="山田 太郎" />
-                <Field label="郵便番号（ハイフンなし）" name="zip" placeholder="1000001" />
-                <Field label="住所" name="address" placeholder="東京都千代田区千代田1-1" />
-                <Field label="電話番号" name="phone" type="tel" placeholder="09012345678" />
+                <Field label="お名前" name="name" placeholder="山田 太郎" value={form.name} onChange={handleChange} error={errors.name} />
+                <Field label="郵便番号（ハイフンなし）" name="zip" placeholder="1000001" value={form.zip} onChange={handleChange} error={errors.zip} />
+                <Field label="住所" name="address" placeholder="東京都千代田区千代田1-1" value={form.address} onChange={handleChange} error={errors.address} />
+                <Field label="電話番号" name="phone" type="tel" placeholder="09012345678" value={form.phone} onChange={handleChange} error={errors.phone} />
               </div>
             </div>
 
