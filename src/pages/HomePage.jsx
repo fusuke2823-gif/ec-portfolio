@@ -15,9 +15,12 @@ function avgRating(reviews) {
 
 function applyPriceFilter(product, range) {
   if (!range) return true
-  if (range === 'low') return product.price <= 3000
-  if (range === 'mid') return product.price >= 3001 && product.price <= 8000
-  return product.price >= 8001
+  const p = product.salePrice ?? product.price
+  if (range === 'under2k') return p <= 2000
+  if (range === '2k5k') return p >= 2001 && p <= 5000
+  if (range === '5k10k') return p >= 5001 && p <= 10000
+  if (range === '10k20k') return p >= 10001 && p <= 20000
+  return p >= 20001
 }
 
 const TOP5 = [...products].sort((a, b) => b.rankScore - a.rankScore).slice(0, 5)
@@ -30,6 +33,8 @@ export default function HomePage() {
   const [query, setQuery] = useState(urlQuery)
   const [selectedCategories, setSelectedCategories] = useState(urlCategory ? [urlCategory] : [])
   const [selectedPrice, setSelectedPrice] = useState(null)
+  const [selectedBadges, setSelectedBadges] = useState([])
+  const [hideOutOfStock, setHideOutOfStock] = useState(false)
   const [sort, setSort] = useState('recommended')
   const [filterOpen, setFilterOpen] = useState(false)
 
@@ -39,20 +44,17 @@ export default function HomePage() {
     .filter(Boolean)
     .slice(0, 4)
 
-  useEffect(() => {
-    setQuery(urlQuery)
-  }, [urlQuery])
-
-  useEffect(() => {
-    if (urlCategory) setSelectedCategories([urlCategory])
-  }, [urlCategory])
+  useEffect(() => { setQuery(urlQuery) }, [urlQuery])
+  useEffect(() => { if (urlCategory) setSelectedCategories([urlCategory]) }, [urlCategory])
 
   const filtered = useMemo(() => {
     let result = products.filter((p) => {
       const matchQuery = !query || p.name.includes(query) || p.description.includes(query)
       const matchCat = selectedCategories.length === 0 || selectedCategories.includes(p.category)
       const matchPrice = applyPriceFilter(p, selectedPrice)
-      return matchQuery && matchCat && matchPrice
+      const matchBadge = selectedBadges.length === 0 || selectedBadges.includes(p.badge)
+      const matchStock = !hideOutOfStock || p.stock > 0
+      return matchQuery && matchCat && matchPrice && matchBadge && matchStock
     })
 
     switch (sort) {
@@ -62,9 +64,17 @@ export default function HomePage() {
       case 'rating': return [...result].sort((a, b) => avgRating(b.reviews) - avgRating(a.reviews))
       default: return [...result].sort((a, b) => b.rankScore - a.rankScore)
     }
-  }, [query, selectedCategories, selectedPrice, sort])
+  }, [query, selectedCategories, selectedPrice, selectedBadges, hideOutOfStock, sort])
 
-  const hasFilter = query || selectedCategories.length > 0 || selectedPrice
+  const hasFilter = query || selectedCategories.length > 0 || selectedPrice || selectedBadges.length > 0 || hideOutOfStock
+
+  const resetFilters = () => {
+    setSelectedCategories([])
+    setSelectedPrice(null)
+    setQuery('')
+    setSelectedBadges([])
+    setHideOutOfStock(false)
+  }
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
@@ -74,11 +84,10 @@ export default function HomePage() {
           <h2 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
             <span className="text-amber-500">🏆</span> 今週の人気ランキング TOP5
           </h2>
-          <div className="flex gap-3 overflow-x-auto pb-2 -mx-1 px-1">
+          <div className="flex gap-3 overflow-x-auto pb-2 -mx-1 px-1 items-stretch">
             {TOP5.map((product, i) => (
-              <div key={product.id} className="relative shrink-0 w-44">
-                <span className="absolute -top-1 -left-1 z-10 w-7 h-7 flex items-center justify-center rounded-full text-xs font-bold shadow
-                  bg-gradient-to-br from-amber-400 to-amber-600 text-white">
+              <div key={product.id} className="relative shrink-0 w-44 flex flex-col">
+                <span className="absolute -top-1 -left-1 z-10 w-7 h-7 flex items-center justify-center rounded-full text-xs font-bold shadow bg-gradient-to-br from-amber-400 to-amber-600 text-white">
                   {i + 1}
                 </span>
                 <ProductCard product={product} />
@@ -118,12 +127,13 @@ export default function HomePage() {
               onCategoryChange={setSelectedCategories}
               selectedPrice={selectedPrice}
               onPriceChange={setSelectedPrice}
+              selectedBadges={selectedBadges}
+              onBadgeChange={setSelectedBadges}
+              hideOutOfStock={hideOutOfStock}
+              onHideOutOfStockChange={setHideOutOfStock}
             />
             {hasFilter && (
-              <button
-                onClick={() => { setSelectedCategories([]); setSelectedPrice(null); setQuery('') }}
-                className="mt-3 text-xs text-accent hover:underline"
-              >
+              <button onClick={resetFilters} className="mt-3 text-xs text-accent hover:underline">
                 フィルターをリセット
               </button>
             )}

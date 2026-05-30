@@ -17,7 +17,7 @@ export default function ProductCard({ product }) {
   const fav = isFavorite(product.id)
 
   return (
-    <div className="group bg-surface border border-border rounded-xl overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+    <div className="group bg-surface border border-border rounded-xl overflow-hidden flex flex-col hover:shadow-md transition-shadow h-full">
       <Link to={`/product/${product.id}`} className="relative block overflow-hidden aspect-square">
         <img
           src={product.images[0]}
@@ -62,7 +62,12 @@ export default function ProductCard({ product }) {
 
         <div className="flex items-end justify-between mt-auto pt-2">
           <div>
-            <p className="text-base font-bold text-primary">¥{product.price.toLocaleString()}</p>
+            {product.salePrice != null && (
+              <p className="text-xs text-gray-400 line-through">¥{product.price.toLocaleString()}</p>
+            )}
+            <p className={`text-base font-bold ${product.salePrice != null ? 'text-red-500' : 'text-primary'}`}>
+              ¥{(product.salePrice ?? product.price).toLocaleString()}
+            </p>
             <p className="text-xs text-gray-400">税込</p>
           </div>
           <StockLabel stock={product.stock} />

@@ -15,7 +15,7 @@ export default function CartPage() {
   })).filter((item) => item.product)
 
   const subtotal = cartProducts.reduce(
-    (sum, { product, quantity }) => sum + product.price * quantity,
+    (sum, { product, quantity }) => sum + (product.salePrice ?? product.price) * quantity,
     0
   )
   const shipping = subtotal >= SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE

@@ -29,7 +29,7 @@ export default function CheckoutPage() {
     quantity: item.quantity,
   })).filter((item) => item.product)
 
-  const subtotal = cartProducts.reduce((s, { product, quantity }) => s + product.price * quantity, 0)
+  const subtotal = cartProducts.reduce((s, { product, quantity }) => s + (product.salePrice ?? product.price) * quantity, 0)
   const shipping = subtotal >= SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE
   const total = subtotal + shipping
 
@@ -112,7 +112,7 @@ export default function CheckoutPage() {
                       <p className="text-xs text-gray-400">数量: {quantity}</p>
                     </div>
                     <p className="text-sm font-bold text-primary shrink-0">
-                      ¥{(product.price * quantity).toLocaleString()}
+                      ¥{((product.salePrice ?? product.price) * quantity).toLocaleString()}
                     </p>
                   </div>
                 ))}

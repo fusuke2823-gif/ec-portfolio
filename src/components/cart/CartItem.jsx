@@ -23,7 +23,7 @@ export default function CartItem({ product, quantity }) {
         </Link>
         <p className="text-xs text-gray-400 mt-0.5">{product.category}</p>
         <p className="text-sm font-bold text-primary mt-1">
-          ¥{(product.price * quantity).toLocaleString()}
+          ¥{((product.salePrice ?? product.price) * quantity).toLocaleString()}
         </p>
 
         <div className="flex items-center gap-2 mt-2">

@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // GitHub Pages SPA: パスをsessionStorageに保存してトップへリダイレクト
+      sessionStorage.setItem('redirect', location.pathname + location.search)
+      location.replace('/ec-portfolio/')
+    </script>
+  </head>
+  <body></body>
+</html>
