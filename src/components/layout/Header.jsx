@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-surface border-b border-border shadow-sm">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center gap-4">
-        <Link to="/" className="text-xl font-bold tracking-tight text-primary shrink-0">
+        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-xl font-bold tracking-tight text-primary shrink-0">
           STYLE<span className="text-accent">SHOP</span>
         </Link>
 
